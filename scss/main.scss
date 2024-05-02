@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+@import './utils/variables';
+@import './base';
+
+@import './utils/utils';
+@import './components/pagination';
+
+@import './components/buttons';
+@import './components/titles';
+@import './components/header';
+@import'./components/hero-section';
+@import './components/advantares';
+@import'./components/_new-format-section';
+@import './components/chef-section';
+@import './components/format_section';
+@import './components/contact-section';
+@import './components/footer';
+@import './components/modals';
+
+@import './utils/mixins';
+
+@import './components/mobile-menu';
+
+
+
+// .circle{
+//     width: 100px;
+//     height: 100px;
+//     background-color: yellow;
+// }
+
+// .circle-big{
+//     width: 200px;
+//     height: 200px;
+//     background-color: green;
+// }
+
+// .circle-small{
+//     width: 50px;
+//     height: 50px;
+//     background-color: pink;
+// }
+//  Замість того, щоб кожен раз не писати одні і тіж властивості по назві,
+//  можна застусувати mixin (передавати значення параметру), нижче приклад 
+
+// .circle{
+//     @include circle(100px, 100px, yellow);
+// }
+
+// .circle-big {
+//     @include circle(200px, 200px, green);
+// }
+
+
+// .circle-small{
+//     @include circle(50px, 50px, pink);
+// }
+
+
+body {
+    font-family: 'Poppins'!important;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--primary-color);
+    background-color: var(--primary-light-color);
+}
+
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+[class*='__container'] {
+    max-width: 1256px;
+    margin: 0 auto;
+    padding: 0px 16px;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+
+
+
+

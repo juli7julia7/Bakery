@@ -1,0 +1,169 @@
+.footer {
+    background: url('../img/footer/footer.png') no-repeat center / cover;
+    background-color: var(--primary-color);
+    padding: 32px 16px;
+    position: relative;
+
+    &::before,
+    &::after {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &::before {
+        content: url(../img/footer/decor-bread-small.png);
+        left: 0;
+        @media(max-width:991.98px){
+            content: url(../img/footer/decor-bread-3.png);
+            top: 48px;
+        }
+    }
+
+    &::after {
+        content: url(../img/footer/decor-bread-big.png);
+        right: 0;
+        @media(max-width:991.98px){
+            content: url(../img/footer/decor-bread-4.png);
+
+        }
+    }
+
+    &__container {
+        color: var(--primary-light-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        @media(min-width:991.98px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        text-align: center;
+
+        @media(min-width:991.98px) {
+            flex: 0 1 50%;
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        text-align: center;
+        @media(min-width:991.98px) {
+            flex: 0 1 50%;
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    &__address {
+        flex: 0 1;
+
+        @media(min-width:991.98px) {
+            flex: 1 1;
+        }
+    }
+
+    &__confidential-info {
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        z-index: 2;
+
+        &--grey {
+            color: var(--secondary-brown-color);
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    &__confidential-info p:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+
+.menu-footer {
+    &__logo {
+        flex: 0 1;
+        // width: 200px;
+        @media(min-width:991.98px) {
+            flex: 1 1;
+        }
+    }
+
+    &__list {
+        flex: 0 1;
+
+        @media(min-width:991.98px) {
+            flex: 1 1;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+.address {
+    &__list {
+        max-width: 200px;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        max-width: 311px;
+        transition: all 0.3s ease 0s;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &:hover {
+            color: var(--brand-light-green-color);
+        }
+    }
+
+    &__wrapper--icon {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    &__icon {
+        fill: var(--primary-light-color);
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            fill: var(--brand-light-green-color);
+        }
+    }
+}
+
+.info__link {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        color: var(--brand-light-green-color);
+    }
+}
