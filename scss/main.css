@@ -732,6 +732,7 @@ body {
     flex: 0 1 50%;
     display: flex;
     gap: 20px;
+    text-align: start;
   }
 }
 .footer__body {
